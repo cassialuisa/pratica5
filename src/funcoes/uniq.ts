@@ -7,6 +7,6 @@
  * 
  * @returns somente os itens definidos.
  */
-export const uniq = <T>(args: T[]): T[] => {
-  return null;
-};
+export function uniq (a:unknown[]) {
+  return Array.from(new Set(a))
+} 
